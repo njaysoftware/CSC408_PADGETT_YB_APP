@@ -7,7 +7,7 @@
       <ListView for="rentor in rentors" >
         <v-template>
           <FlexboxLayout flexdirection="column">
-            <GridLayout rows="*, *" columns="*, *">
+            <GridLayout rows="auto, auto" columns="*, *">
               <Label :text="'Name: ' + rentor.name" row="0" col="0" textWrap="true"/>
               <Label :text="'Email: ' + rentor.email" row="1" col="0" textWrap="true"/>
               <Label :text="'rented: ' + rented(rentor)" row="0" col="1" textWrap="true"/>

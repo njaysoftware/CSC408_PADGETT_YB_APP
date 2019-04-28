@@ -19,7 +19,7 @@
         <customer-component :customers="customers"></customer-component>
       </TabViewItem>
       <TabViewItem title="About">
-        <GridLayout columns="*" rows="*">          
+        <GridLayout columns="*" rows="*" >          
           <Label class="message" :text="aboutMsg" col="0" row="0" textWrap="true"/>
         </GridLayout>
       </TabViewItem>
@@ -118,5 +118,8 @@ ActionBar {
 }
 Page {
   background-color: #ffffff;
+}
+GridLayout {
+  background-color: rgb(224,224, 224)
 }
 </style>

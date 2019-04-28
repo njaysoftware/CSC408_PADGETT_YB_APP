@@ -1,10 +1,10 @@
 <template>
-    <StackLayout>
+    <StackLayout style="height: 100%">
         <GridLayout rows="auto" columns="*, *" width="100%">
             <Label text="Name:" row="0" col="0" textWrap="true" class="list-group-item-heading label-text" style="width: 60%"/>
             <Label text="Email:" row="0" col="1" textWrap="true" class="list-group-item-heading label-text " style="width: 60%"/>
         </GridLayout>
-        <ListView for="customer in customers" style="height:1250px">
+        <ListView for="customer in customers" style="height:100%">
             <v-template>
                 <FlexboxLayout flexDirection="row" class="list-group-item">
                     <customer-details :customer="customer"></customer-details>
@@ -33,5 +33,8 @@ export default {
     color: black;
     text-align: center;
     margin-top: 10;    
+}
+StackLayout {
+    background-color: rgb(224, 224, 224);
 }
 </style>
